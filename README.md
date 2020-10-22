@@ -1,6 +1,7 @@
 # storage
 
-A new Flutter application.
+한동대학교 모바일앱개발 수업 실습에 활용되는 예시 코드입니다.
+
 
 ## Getting Started
 

@@ -4,13 +4,16 @@ A new Flutter application.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+* FlutterFire example 코드 원본: https://github.com/FirebaseExtended/flutterfire/tree/master/packages/firebase_storage/firebase_storage/example
 
-A few resources to get you started if this is your first Flutter project:
+* GitHub 수정 코드: https://github.com/SoA-YD/ece30002
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+[예시 코드에서 수정된 사항]
+
+1. Upload from String 의 txt 파일명이 중복되지 않고 업로드 가능하도록, 시간 기반으로 파일명 수정.﻿
+
+2. Upload from File 기능 제거
+
+    - Upload from String과 개념이 크게 다르지 않고 Simulator, Emulator에서 지원되지 않아 가려두었습니다.

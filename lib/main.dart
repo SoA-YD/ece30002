@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:file_picker/file_picker.dart';
 import 'package:firebase_core/firebase_core.dart' as firebase_core;
 import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
 import 'package:flutter/material.dart';
@@ -16,9 +15,6 @@ Future<void> main() async {
 enum UploadType {
   /// Uploads a randomly generated string (as a file) to Storage.
   string,
-
-  /// Uploads a file from the device.
-  file,
 
   /// Clears any tasks from the list.
   clear,
@@ -92,15 +88,6 @@ class _TaskManager extends State<TaskManager> {
         setState(() {
           _uploadTasks = [..._uploadTasks, uploadString()];
         });
-        break;
-      case UploadType.file:
-        File file = await FilePicker.getFile();
-        firebase_storage.UploadTask task = uploadFile(file);
-        if (task != null) {
-          setState(() {
-            _uploadTasks = [..._uploadTasks, task];
-          });
-        }
         break;
       case UploadType.clear:
         setState(() {
@@ -204,7 +191,7 @@ class UploadTaskListTile extends StatelessWidget {
             }
           } else if (snapshot != null) {
             subtitle =
-                Text('${state}: ${_bytesTransferred(snapshot)} bytes sent');
+                Text('$state: ${_bytesTransferred(snapshot)} bytes sent');
           }
 
           return Dismissible(

@@ -223,32 +223,16 @@ PODS:
     - Firebase/Firestore (~> 6.30.0)
     - firebase_core
     - Flutter
-  - cloud_functions (0.7.0-dev.2):
-    - Firebase/CoreOnly (~> 6.30.0)
-    - Firebase/Functions (~> 6.30.0)
-    - firebase_core
-    - Flutter
   - e2e (0.0.1):
     - Flutter
-  - Firebase/Auth (6.30.0):
-    - Firebase/CoreOnly
-    - FirebaseAuth (~> 6.8.0)
   - Firebase/CoreOnly (6.30.0):
     - FirebaseCore (= 6.10.0)
   - Firebase/Firestore (6.30.0):
     - Firebase/CoreOnly
     - FirebaseFirestore (~> 1.16.4)
-  - Firebase/Functions (6.30.0):
-    - Firebase/CoreOnly
-    - FirebaseFunctions (~> 2.8.0)
   - Firebase/Storage (6.30.0):
     - Firebase/CoreOnly
     - FirebaseStorage (~> 3.9.0)
-  - firebase_auth (0.18.1-2):
-    - Firebase/Auth (~> 6.30.0)
-    - Firebase/CoreOnly (~> 6.30.0)
-    - firebase_core
-    - Flutter
   - firebase_core (0.5.0-1):
     - Firebase/CoreOnly (~> 6.30.0)
     - Flutter
@@ -257,11 +241,6 @@ PODS:
     - Firebase/Storage (~> 6.30.0)
     - firebase_core
     - Flutter
-  - FirebaseAuth (6.8.0):
-    - FirebaseCore (~> 6.10)
-    - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
-    - GoogleUtilities/Environment (~> 6.7)
-    - GTMSessionFetcher/Core (~> 1.1)
   - FirebaseCore (6.10.0):
     - FirebaseCoreDiagnostics (~> 1.3)
     - GoogleUtilities/Environment (~> 6.7)
@@ -283,30 +262,16 @@ PODS:
     - "gRPC-C++ (~> 1.28.0)"
     - leveldb-library (~> 1.22)
     - nanopb (~> 1.30905.0)
-  - FirebaseFunctions (2.8.0):
-    - FirebaseCore (~> 6.10)
-    - GTMSessionFetcher/Core (~> 1.1)
   - FirebaseStorage (3.9.0):
     - FirebaseCore (~> 6.10)
     - GTMSessionFetcher/Core (~> 1.1)
   - Flutter (1.0.0)
   - GoogleDataTransport (7.2.0):
     - nanopb (~> 1.30905.0)
-  - GoogleUtilities/AppDelegateSwizzler (6.7.2):
-    - GoogleUtilities/Environment
-    - GoogleUtilities/Logger
-    - GoogleUtilities/Network
   - GoogleUtilities/Environment (6.7.2):
     - PromisesObjC (~> 1.2)
   - GoogleUtilities/Logger (6.7.2):
     - GoogleUtilities/Environment
-  - GoogleUtilities/Network (6.7.2):
-    - GoogleUtilities/Logger
-    - "GoogleUtilities/NSData+zlib"
-    - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (6.7.2)"
-  - GoogleUtilities/Reachability (6.7.2):
-    - GoogleUtilities/Logger
   - "gRPC-C++ (1.28.2)":
     - "gRPC-C++/Implementation (= 1.28.2)"
     - "gRPC-C++/Interface (= 1.28.2)"
@@ -342,9 +307,7 @@ PODS:
 
 DEPENDENCIES:
   - cloud_firestore (from `.symlinks/plugins/cloud_firestore/ios`)
-  - cloud_functions (from `.symlinks/plugins/cloud_functions/ios`)
   - e2e (from `.symlinks/plugins/e2e/ios`)
-  - firebase_auth (from `.symlinks/plugins/firebase_auth/ios`)
   - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
   - firebase_storage (from `.symlinks/plugins/firebase_storage/ios`)
   - Flutter (from `Flutter`)
@@ -354,11 +317,9 @@ SPEC REPOS:
     - abseil
     - BoringSSL-GRPC
     - Firebase
-    - FirebaseAuth
     - FirebaseCore
     - FirebaseCoreDiagnostics
     - FirebaseFirestore
-    - FirebaseFunctions
     - FirebaseStorage
     - GoogleDataTransport
     - GoogleUtilities
@@ -372,12 +333,8 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   cloud_firestore:
     :path: ".symlinks/plugins/cloud_firestore/ios"
-  cloud_functions:
-    :path: ".symlinks/plugins/cloud_functions/ios"
   e2e:
     :path: ".symlinks/plugins/e2e/ios"
-  firebase_auth:
-    :path: ".symlinks/plugins/firebase_auth/ios"
   firebase_core:
     :path: ".symlinks/plugins/firebase_core/ios"
   firebase_storage:
@@ -389,17 +346,13 @@ SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
   BoringSSL-GRPC: 8edf627ee524575e2f8d19d56f068b448eea3879
   cloud_firestore: 23c8ce2988417ae71501fa6cdd2421df22098617
-  cloud_functions: 5cd9e130e915b44836422ffd47827601ac5f21cb
   e2e: d0c9f8c832b4cc7ab386d0c0f0af67fe5ac0c3bd
   Firebase: 210f41ca352067d83b1ba4fd2e7fb49a0c017397
-  firebase_auth: e1de1cd01974111c7650de9bc5d0c3690799049e
   firebase_core: 1e6658c33995aed8c0426e1c195531bb592a9c09
   firebase_storage: f2f7ea910f3adc7659478dc0f526ed78cd1088cf
-  FirebaseAuth: 300433de340c1b058dbb8aec224a3f1bcfda5184
   FirebaseCore: 9a41e2de78fef10f63cee30ab10e2945266bc1fc
   FirebaseCoreDiagnostics: 7535fe695737f8c5b350584292a70b7f8ff0357b
   FirebaseFirestore: ff82cd15f8ed3b417c307eb729e3e2e68aad0bdd
-  FirebaseFunctions: e0694e614a5e3300120a10d925e2cd3be60a9c81
   FirebaseStorage: 33b92875a9b556824886cc7a65120c7d2cb3a8d8
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
   GoogleDataTransport: 672fb0ce96fe7f7f31d43672fca62ad2c9c86f7b
